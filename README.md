@@ -1,32 +1,17 @@
-# 🌐 12345star.github.io
+# 🧮 Calculadora en Go
 
-Sitio web personal / portafolio desarrollado con **HTML**, **CSS** y/o **JavaScript** (ajusta según tu stack real).  
-Este repositorio contiene el código fuente y los recursos necesarios para desplegar el sitio en **GitHub Pages**.
+Este proyecto es una **calculadora sencilla** desarrollada en **Golang**, que permite realizar operaciones básicas entre dos números desde la consola:
 
----
-
-## 📋 Descripción
-
-Este proyecto tiene como objetivo mostrar mi portafolio de proyectos,compartir artículos y recursos.
-
-Incluye:
-- Diseño responsivo para dispositivos móviles y escritorio.
-- Navegación sencilla e intuitiva.
+- ➕ Suma
+- ➖ Resta
+- ✖️ Multiplicación
+- ➗ División
 
 ---
 
-## 🚀 Demo
+## 📌 Descripción
 
-Puedes visitar el sitio en:  
-[https://12345star.github.io](https://12345star.github.io)
-
----
-
-## 🛠️ Tecnologías utilizadas
-
-- **HTML5** – estructura del contenido.
-- **CSS3** – estilos y diseño responsivo.
-- **JavaScript** – interactividad y funcionalidades dinámicas.
+La calculadora está diseñada para ejecutarse en la terminal y recibir la entrada del usuario, procesando las operaciones mediante funciones separadas para mantener un código limpio y modular.
 
 ---
 
@@ -34,11 +19,14 @@ Puedes visitar el sitio en:
 
 ```plaintext
 .
-├── index.html
-├── /css
-│   └── estilos.css
-├── /js
-│   └── script.js
-├── /img
-│   └── ...
-└── README.md
+├── index.go                # Punto de entrada principal
+├── go.mod                  # Módulo de Go
+├── go.sum                  # Dependencias
+├── model/
+│   └── operaciones.go      # Lógica de operaciones matemáticas
+├── testing/
+│   └── operaciones_test.go # Pruebas unitarias
+└── view/
+    └── view.go              # Interfaz de entrada/salida en consola
+
+
