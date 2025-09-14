@@ -1,0 +1,23 @@
+# Se usa para hacer la ignoración de archivos binarios y archivos temporales
+# Archivos binarios
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib 
+# Archivos temporales
+*~
+*.swp
+*.tmp
+*.log
+# Archivos de configuración del entorno de desarrollo
+.vscode/
+.idea/
+# Archivos de dependencias
+vendor/
+# Archivos de compilación
+bin/
+build//
+# Archivos de cobertura de pruebas
+coverage.out
+# Archivos de reportes de pruebas               
