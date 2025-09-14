@@ -1,80 +1,44 @@
-Title
-===
-Abstract:xxx
-## Papar Information
-- Title:  `paper name`
-- Authors:  `A`,`B`,`C`
-- Preprint: [https://arxiv.org/abs/xx]()
-- Full-preprint: [paper position]()
-- Video: [video position]()
+# 🌐 12345star.github.io
 
-## Install & Dependence
-- python
-- pytorch
-- numpy
+Sitio web personal / portafolio desarrollado con **HTML**, **CSS** y/o **JavaScript** (ajusta según tu stack real).  
+Este repositorio contiene el código fuente y los recursos necesarios para desplegar el sitio en **GitHub Pages**.
 
-## Dataset Preparation
-| Dataset | Download |
-| ---     | ---   |
-| dataset-A | [download]() |
-| dataset-B | [download]() |
-| dataset-C | [download]() |
+---
 
-## Use
-- for train
-  ```
-  python train.py
-  ```
-- for test
-  ```
-  python test.py
-  ```
-## Pretrained model
-| Model | Download |
-| ---     | ---   |
-| Model-1 | [download]() |
-| Model-2 | [download]() |
-| Model-3 | [download]() |
+## 📋 Descripción
 
+Este proyecto tiene como objetivo mostrar mi portafolio de proyectos,compartir artículos y recursos.
 
-## Directory Hierarchy
-```
-|—— .gitignore
-|—— go.mod
-|—— go.sum
-|—— index.go
-|—— model
-|    |—— opeaciones.go
-|—— testing
-|    |—— opeaciones_test.go
-|—— view
-|    |—— view.go
-```
-## Code Details
-### Tested Platform
-- software
-  ```
-  OS: Debian unstable (May 2021), Ubuntu LTS
-  Python: 3.8.5 (anaconda)
-  PyTorch: 1.7.1, 1.8.1
-  ```
-- hardware
-  ```
-  CPU: Intel Xeon 6226R
-  GPU: Nvidia RTX3090 (24GB)
-  ```
-### Hyper parameters
-```
-```
-## References
-- [paper-1]()
-- [paper-2]()
-- [code-1](https://github.com)
-- [code-2](https://github.com)
-  
-## License
+Incluye:
+- Diseño responsivo para dispositivos móviles y escritorio.
+- Navegación sencilla e intuitiva.
 
-## Citing
-If you use xxx,please use the following BibTeX entry.
-```
-```
+---
+
+## 🚀 Demo
+
+Puedes visitar el sitio en:  
+[https://12345star.github.io](https://12345star.github.io)
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **HTML5** – estructura del contenido.
+- **CSS3** – estilos y diseño responsivo.
+- **JavaScript** – interactividad y funcionalidades dinámicas.
+
+---
+
+## 📂 Estructura del proyecto
+
+```plaintext
+.
+├── index.html
+├── /css
+│   └── estilos.css
+├── /js
+│   └── script.js
+├── /img
+│   └── ...
+└── README.md
