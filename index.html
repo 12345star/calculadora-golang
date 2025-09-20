@@ -9,37 +9,29 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Estilos personalizados -->
-  <style>
-    pre {
-      background-color: #f8f9fa;
-      padding: 10px;
-      border-radius: 5px;
-      overflow-x: auto;
-    }
-    code {
-      font-family: monospace;
-    }
-    .section-title {
-      margin-top: 2rem;
-    }
-    .estructura {
-      background-color: #f1f1f1;
-      padding: 1rem;
-      border-radius: 5px;
-      font-family: monospace;
-    }
-  </style>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-
+  <button id="theme-toggle" class="btn btn-dark position-fixed top-0 end-0 m-3">🌙 Tema Oscuro</button>
   <div class="container py-5">
     <header class="text-center mb-5">
-      <h1 class="display-5">🔢 Calculadora en Go</h1>
-      <p class="lead">Calculadora de operaciones básicas hecha en Golang (Go)</p>
+      <h1 class="display-5"><img src="https://go.dev/images/favicon-gopher.svg" alt="Logo de Go" width="32" height="32"> GOLANG CALCULADORA</h1>
+      <p class="lead">
+        Calculadora de consola que hace las operaciones basicas
+      </p>
+        <p>
+          <a href="README.md" target="_blank" rel="noopener noreferrer">Versión en Español</a> |
+          <a href="README.en.md" target="_blank" rel="noopener noreferrer">English Version</a>
+        </p>
+        <p> Enlace al repositorio:
+          <a href="https://github.com/12345star/calculadora-golang" target="_blank" rel="noopener noreferrer" style="margin-left:10px; vertical-align:middle;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="28" height="28" style="vertical-align:middle;">
+          </a>
+        </p>
     </header>
 
     <section>
-      <h2 class="section-title">🧮 Funcionalidades</h2>
+      <h2 class="section-title">Funcionalidades 📋</h2>
       <p>La calculadora permite realizar operaciones básicas entre dos números desde la consola:</p>
       <ul>
         <li>➕ Suma</li>
@@ -50,65 +42,99 @@
     </section>
 
     <section>
-      <h2 class="section-title">📋 Descripción</h2>
+      <h2 class="section-title">Descripción 📌</h2>
       <p>La calculadora está diseñada para ejecutarse en la terminal y recibir la entrada del usuario, procesando las operaciones mediante funciones separadas para mantener un código limpio y modular.</p>
     </section>
 
+      <section>
+        <h2 class="section-title">Comenzando 🚀</h2>
+        <ol>
+          <li>Clona el repositorio en tu máquina local:</li>
+          <pre><code>git clone https://github.com/12345star/calculadora-golang.git</code></pre>
+          <li>Navega al directorio del proyecto:</li>
+          <pre><code>cd calculadora-golang</code></pre>
+        </ol>
+      </section>
+
     <section>
-      <h2 class="section-title">🛠️ Requisitos de instalación</h2>
+      <h2 class="section-title">Dependencias 📦</h2>
+      <p>Documentacion <strong>Dependencias.</strong></p>
+      <ul>
+            <li><a href="https://go.dev" target="_blank" rel="noopener noreferrer">Golang</a></li>
+            <li><a href="https://github.com/stretchr/testify" target="_blank" rel="noopener noreferrer">UNIT (Testify)</a></li>
+            <li><a href="https://go.dev/ref/mod#go-mod-tidy" target="_blank" rel="noopener noreferrer">Modulo tidy</a></li>
+      </ul>
       <p>Asegúrate de tener instalado <strong>Go</strong> (v1.18 o superior) en tu sistema.</p>
-      <pre><code>go mod init calculadora
-go mod tidy
-go get github.com/stretchr/testify/assert</code></pre>
+      <pre><code>go mod init calculadora</code></pre>
+      <pre><code>go mod tidy</code></pre>
+      <pre><code>go get github.com/stretchr/testify/assert</code></pre>
     </section>
 
     <section>
-      <h2 class="section-title">⚙️ Instalación y uso</h2>
+      <h2 class="section-title">Uso ⚙️</h2>
       <ol>
-        <li>Clona el repositorio:</li>
-        <pre><code>git clone https://github.com/12345star/calculadora-golang.git</code></pre>
-
-        <li>Ingresa al directorio:</li>
-        <pre><code>cd calculadora-golang</code></pre>
-
         <li>Ejecuta operaciones desde consola:</li>
         <ul>
-          <li><strong>Suma:</strong> <code>go run index.go 5 + 3</code></li>
-          <li><strong>Resta:</strong> <code>go run index.go 5 - 3</code></li>
-          <li><strong>Multiplicación:</strong> <code>go run index.go 5 * 3</code></li>
-          <li><strong>División:</strong> <code>go run index.go 6 / 3</code></li>
+          <li><strong>Suma:</strong> <pre><code>go run index.go 5 + 3</code></pre></li>
+          <li><strong>Resta:</strong> <pre><code>go run index.go 5 - 3</code></pre></li>
+          <li><strong>Multiplicación:</strong> <pre><code>go run index.go 5 * 3</code></pre></li>
+          <li><strong>División:</strong> <pre><code>go run index.go 6 / 3</code></pre></li>
+          <li><strong>Estructura:</strong><pre><code>go run index.go &lt;num1&gt; &lt;operador&gt; &lt;num2&gt;</code></pre></li>
         </ul>
       </ol>
     </section>
 
     <section>
-      <h2 class="section-title">🧪 Pruebas</h2>
-      <p>Para ejecutar las pruebas unitarias:</p>
+        <section>
+          <h2 class="section-title">🧪 Pruebas</h2>
+          <p>Para ejecutar las pruebas unitarias:</p>
+        </section>
       <pre><code>go test ./...</code></pre>
     </section>
 
     <section>
       <h2 class="section-title">📂 Estructura del proyecto</h2>
       <div class="estructura">
-<pre>
-.
-├── index.go                # Punto de entrada principal
-├── go.mod                  # Módulo de Go
-├── go.sum                  # Dependencias
-├── model/
-│   └── operaciones.go      # Lógica de operaciones matemáticas
-├── testing/
-│   └── operaciones_test.go # Pruebas unitarias
-└── view/
-    └── view.go             # Interfaz de entrada/salida en consola
-</pre>
+        <pre>
+        .
+        ├── index.go                    # Punto de entrada principal
+        ├── README.md                   # Documentación del proyecto
+        ├── LICENSE                     # Licencia del proyecto
+        ├── .gitignore                  # Archivos y carpetas a ignorar por Git
+        ├── img/                        # Carpeta para imágenes
+        │   └── calculadora-golang.png  # Imagen de la estructura del proyecto
+        ├── go.mod                      # Módulo de Go
+        ├── go.sum                      # Dependencias
+        ├── model/
+        │   └── operaciones.go          # Lógica de operaciones matemáticas
+        ├── testing/
+        │   └── operaciones_test.go     # Pruebas unitarias
+        └── view/
+            └── view.go                 # Interfaz de entrada/salida en consola
+        </pre>
+      </div>
+    </section>
+    <section> 
+      <h2 class="section-title">📂 Imagen de las carpetas</h2>
+      <div class="text-center my-3">
+        <img src="img/calculadora-golang.png" alt="Estructura del proyecto" class="img-fluid" style="max-width:400px;">
       </div>
     </section>
 
     <section>
       <h2 class="section-title">📄 Licencia</h2>
       <p>Este proyecto está bajo la Licencia <strong>MIT</strong>. Puedes usarlo, modificarlo y distribuirlo libremente.</p>
+        <p>Consulta el archivo <a href="LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>.</p>
     </section>
+
+      <section>
+        <h2 class="section-title">✨ Autor</h2>
+        <p>Creado con ❤️ por <a href="https://github.com/12345star" target="_blank" rel="noopener noreferrer">@David</a></p>
+        <ul>
+          <li><strong>David Salas</strong> - <em>Trabajo Inicial</em> - <a href="https://github.com/12345star" target="_blank" rel="noopener noreferrer">David</a></li>
+          <li><strong>David Salas</strong> - <em>Documentación</em> - <a href="https://github.com/12345star" target="_blank" rel="noopener noreferrer">David</a></li>
+        </ul>
+      </section>
 
     <footer class="text-center mt-5 pt-4 border-top">
       <p class="mb-1">Creado con ❤️ por <strong>@12345star</strong></p>
@@ -118,5 +144,6 @@ go get github.com/stretchr/testify/assert</code></pre>
 
   <!-- Bootstrap JS (opcional) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/theme.js"></script>
 </body>
 </html>
