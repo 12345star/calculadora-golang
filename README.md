@@ -1,5 +1,5 @@
-# 🧮 Calculadora en Go
-
+# Calculadora en Go ![Logo de Go](https://go.dev/images/favicon-gopher.svg)
+ 
 Este proyecto es una **calculadora sencilla** desarrollada en **Golang**, que permite realizar operaciones básicas entre dos números desde la consola:
 
 - ➕ Suma
@@ -7,40 +7,58 @@ Este proyecto es una **calculadora sencilla** desarrollada en **Golang**, que pe
 - ✖️ Multiplicación
 - ➗ División
 
----
-
-## 📌 Descripción
+## Descripción 📌
 
 La calculadora está diseñada para ejecutarse en la terminal y recibir la entrada del usuario, procesando las operaciones mediante funciones separadas para mantener un código limpio y modular.
 
----
-## 🛠 Requisitos de instalación
+Versión en [ingles](./README.en.md)
 
-Asegúrate de tener instalado **Go** en tu sistema.
 
-[GO](https://go.dev) 1.18 o superior
+## Comenzando 🚀
 
-Ejecuta los siguientes comandos en tu terminal:
+Para comenzar a utilizar la calculadora, sigue estos pasos:
 
-```bash
-go mod init calculadora
-go mod tidy
-go get github.com/stretchr/testify/assert
-```
----
-
-## ⚙️ Instalación y uso
-
-1. Clona el repositorio:
+1. Clona el repositorio en tu máquina local:
    ```bash
    git clone https://github.com/12345star/calculadora-golang.git
    ```
+
 2. Navega al directorio del proyecto:
    ```bash
    cd calculadora-golang
    ```
 
-3. Ejecuta la aplicación:
+## Pre-requisitos 📋
+
+Asegúrate de tener instalado **Go** en tu sistema.
+
+ **GO** 1.18 o superior
+ 
+ * Pagina oficial de [Golang](https://go.dev)
+ * Pagina de  [Testify](https://github.com/stretchr/testify)
+ * Pagina de [modulo tidy](https://go.dev/ref/mod#go-mod-tidy)
+
+## Dependencias  📦
+
+**Ejecuta los siguientes comandos en tu terminal:**
+
+```bash
+go mod init calculadora
+```
+
+```bash
+go mod tidy
+```
+
+```bash
+go get github.com/stretchr/testify/assert
+```
+
+## Ejecutando las pruebas ⚙️
+1. comando para ejecutar la calculadora:
+   ```bash
+   go run index.go <num1> <operador> <num2>
+   ```   
    1. Suma:
    ```bash
    go run index.go 5 + 3
@@ -59,7 +77,7 @@ go get github.com/stretchr/testify/assert
    ```   
 
 ---
-## 🧪 Pruebas
+## Pruebas Unitarias 🧪
 
 Para ejecutar las pruebas, utiliza el siguiente comando:
 
@@ -68,37 +86,43 @@ go test ./...
 ```
 
 ---
-## 📄 Licencia
+## Licencia 📄 
 
-Este proyecto está bajo la **Licencia MIT**.  
+Este proyecto está bajo la Licencia **MIT**.  
+
 Puedes usarlo, modificarlo y distribuirlo libremente.
 
-Consulta el archivo [LICENSE](https://opensource.org/license/MIT "licencia MIT ") para más información. 
+Consulta el archivo [MIT](./LICENSE).
 
 ---
-## ✨ Autor
+## Autor ✨ 
 
-Creado con ❤️ por [@12345star](https://github.com/12345star)  
-Mención especial a [@12345star](https://github.com/12345star) por su colaboración.
-
+Creado con ❤️ por [@David](https://github.com/12345star)  
+* **David Salas** - *Trabajo Inicial* - [David](https://github.com/12345star)
+* **David Salas** - *Documentación* - [David](https://github.com/12345star)
 ---
     
-## 📂 Estructura del proyecto
+## Estructura del proyecto 📂
 
 ```plaintext
 .
-├── index.go                # Punto de entrada principal
-├── go.mod                  # Módulo de Go
-├── go.sum                  # Dependencias
+├── index.go                    # Punto de entrada principal
+├── README.md                   # Documentación del proyecto
+├── LICENSE                     # Licencia del proyecto
+├── .gitignore                  # Archivos y carpetas a ignorar por Git
+├── img/                        # Carpeta para imágenes
+│   └── calculadora-golang.png  # Imagen de la estructura del proyecto
+├── go.mod                      # Módulo de Go
+├── go.sum                      # Dependencias
 ├── model/
-│   └── operaciones.go      # Lógica de operaciones matemáticas
+│   └── operaciones.go          # Lógica de operaciones matemáticas
 ├── testing/
-│   └── operaciones_test.go # Pruebas unitarias
+│   └── operaciones_test.go     # Pruebas unitarias
 └── view/
-    └── view.go              # Interfaz de entrada/salida en consola
+    └── view.go                 # Interfaz de entrada/salida en consola
 
 ```
 ---
-## 🚀 Ejemplo de estructura
+## Estructura proyecto 🚀
   
-  ![Ejemplo estructura](./calculadora-golang.png)
+  ![Ejemplo estructura](./img/calculadora-golang.png)
